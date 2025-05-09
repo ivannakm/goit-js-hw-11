@@ -1,0 +1,140 @@
+/* ----- Global Reset ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* ----- Body & Background ----- */
+  body {
+    background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  /* ----- Container ----- */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* ----- Form Styling ----- */
+  .form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  
+  .form-input {
+    padding: 12px 20px;
+    width: 300px;
+    border: 2px solid #90caf9;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #f48fb1;
+    outline: none;
+  }
+  
+  .form-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: linear-gradient(to right, #90caf9, #f48fb1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-btn:hover {
+    background: linear-gradient(to right, #64b5f6, #f06292);
+  }
+  
+  /* ----- Loader ----- */
+  .loader {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #f06292;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loader.hidden {
+    display: none;
+  }
+  
+ @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ----- Gallery ----- */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1140px; /* 3 cards x 360px + gaps */
+  }
+  
+  /* ----- Card Item ----- */
+  .gallery-item-wrapper {
+    width: 360px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item-wrapper:hover {
+    transform: scale(1.03);
+  }
+  
+  .gallery-image-link {
+    display: block;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* ----- Image ----- */
+  .data {
+    padding: 16px;
+    background: #fce4ec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .data-item {
+    flex: 1 1 45%;
+    font-size: 14px;
+    color: #37474f;
+  }
+  
+  .data-item-numbers {
+    font-weight: bold;
+    color: #f06292;
+    margin-left: 4px;
+  }
+  

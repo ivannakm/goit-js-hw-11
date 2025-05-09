@@ -12,11 +12,16 @@
     <div class="container">
       <form class="form">
         <label>
-          <!-- required if removed there is warning message  -->
-          <input type="text" name="search-text" placeholder="Search images..." required> 
+          <input class="form-input" type="text" name="search-text" placeholder="Search images..." required> 
         </label>
         <button type="submit" class="form-btn">Search</button>
-      </form>      
+      </form> 
+<!-- Loader -->
+      <span class="loader hidden"></span>
+<!-- Gallery -->
+        <div class="gallery-wrapper">
+          <ul class="gallery"></ul>
+        </div>
     </div>
 
     <script type="module" src="./main.js"></script>
