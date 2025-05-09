@@ -27,7 +27,6 @@ form.addEventListener('submit', event => {
 
     getImagesByQuery(query)
       .then(data => {
-        console.log(data);
 
         if (!data.hits.length) {
           iziToast.error({
